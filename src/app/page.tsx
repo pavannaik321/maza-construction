@@ -1,7 +1,19 @@
-import React from 'react'
+import Hero from "../../components/Hero";
+import ServicesList from "../../components/ServicesList";
+import WhyChoose from "../../components/WhyChoose";
+import Projects from "../../components/Project";
+import Testimonials from "../../components/Testmonials";
+import FAQ from "../../components/FAQ";
 
-export default function page() {
+export default function HomePage() {
   return (
-    <div>page</div>
-  )
+    <>
+      <Hero />
+      <ServicesList />
+      <WhyChoose />
+      <Projects />
+      <Testimonials />
+      <FAQ />
+    </>
+  );
 }
