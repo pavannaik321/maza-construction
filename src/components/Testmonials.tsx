@@ -7,7 +7,7 @@ export default function Testimonials() {
       <div className="grid md:grid-cols-4 gap-6 text-sm text-center">
         {[1, 2, 3, 4].map((i) => (
           <div key={i} className="bg-white shadow-md rounded-lg p-6">
-            <p className="mb-4">"We offer a comprehensive range of construction services designed to meet your needs."</p>
+            <p className="mb-4">We offer a comprehensive range of construction services designed to meet your needs.</p>
             <p className="font-semibold">Priya Naik</p>
             <div className="text-yellow-400 mt-1">★★★★★</div>
           </div>
