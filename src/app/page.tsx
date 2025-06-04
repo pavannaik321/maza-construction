@@ -14,6 +14,7 @@ export default function page() {
       <Projects />
       <Testimonials />
       <FAQ />
+      <h2>hii hello</h2>
     </>
   );
 }
