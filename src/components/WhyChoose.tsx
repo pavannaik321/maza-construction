@@ -1,56 +1,57 @@
 const features = [
   {
     title: "Commitment to Excellence",
-    desc: "We offer a comprehensive range of construction services designed to meet your needs."
+    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
   },
   {
-    title: "Comprehensive Communication",
-    desc: "We offer a comprehensive range of construction services designed to meet your needs."
+    title: "Comprehensive Communi...",
+    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
   },
   {
     title: "Collaborative Approach",
-    desc: "We offer a comprehensive range of construction services designed to meet your needs."
+    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
   },
   {
     title: "Customer Success",
-    desc: "We offer a comprehensive range of construction services designed to meet your needs."
-  }
+    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
+  },
 ];
 
 export default function WhyChoose() {
   return (
-    <section className="relative bg-black text-white pt-24 pb-16 px-6">
-      {/* Top SVG cut (same as in image) */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-0">
-        <svg
-          className="relative block w-full h-20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-        >
-          <path
-            d="M1200 0L0 0 892.25 114.72 1200 0z"
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
+    <section className="relative bg-white text-white py-20 px-4">
+      <div
+        className="max-w-7xl mx-auto px-4 pt-14 pb-20"
+        style={{
+          clipPath:
+            "path('M0,20 Q0,0 20,0 H600 q30,0 40,-20 q10,20 40,20 H1000 Q1020,0 1020,20 V480 Q1020,500 1000,500 H600 q-20,0 -40,20 q-20,-20 -40,-20 H20 Q0,500 0,480 Z')",
+          backgroundColor: "#0d0d0d",
+        }}
+      >
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Why choose <span className="text-yellow-400">Malasa Construction</span>?
+          </h2>
+          <p className="text-gray-400 max-w-3xl mx-auto">
+            Malasa Construction is a renowned name in the field of civil works,
+            building renovation, construction, interior design, painting.
+          </p>
+        </div>
 
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
-          Why choose <span className="text-yellow-400">Maza Construction</span>?
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-[#1a1a1a] rounded-xl px-6 py-10 border border-gray-700"
-            >
-              <div className="text-3xl font-bold text-white mb-3">
+            <div key={index} className="bg-[#2a2a2a] rounded-xl px-6 py-6 text-left">
+              <div className="text-gray-500 text-xl font-bold mb-2">
                 0{index + 1}
               </div>
-              <h4 className="text-lg font-semibold text-white mb-2">{feature.title}</h4>
-              <p className="text-sm text-gray-400">{feature.desc}</p>
+              <h4 className="text-white font-semibold text-base mb-2">
+                {feature.title}
+              </h4>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {feature.desc}
+              </p>
             </div>
           ))}
         </div>
