@@ -13,7 +13,10 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-16 px-6 bg-black text-white">
+    <section className="bg-white text-white py-20 px-4 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/bgimage2.png')",
+    backgroundSize: "1500px 500px",
+   }}>
       <h2 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
       <div className="space-y-4 max-w-2xl mx-auto">
         {questions.map((q, idx) => (

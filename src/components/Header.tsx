@@ -5,11 +5,11 @@ export default function Header() {
     <header className="flex items-center justify-between px-6 py-4 shadow-md bg-white">
       {/* Logo */}
       <div className="bg-gray-100 px-4 py-2 rounded-full font-semibold text-sm">
-        Malasa Construction
+        maza Construction
       </div>
 
       {/* Navigation */}
-      <nav className="bg-gray-100 px-4 py-2 rounded-full flex gap-6 text-sm text-gray-500">
+      <nav className="bg-gray-100 px-4 py-2 rounded-full flex gap-6 text-s text-gray-500">
         <Link href="/" className="hover:text-black font-semibold text-black">Home</Link>
         <Link href="/about" className="hover:text-black">About Us</Link>
         <Link href="/services" className="hover:text-black">Services</Link>

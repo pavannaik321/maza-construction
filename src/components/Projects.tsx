@@ -7,7 +7,7 @@ const projectData = [
 
 export default function Projects() {
   return (
-    <section className="py-16 px-4 md:px-10 text-center">
+    <section className="py-16 px-4 bg-white md:px-10 text-center">
       <h2 className="text-3xl font-bold mb-2">
         Expertly Completed <span className="text-yellow-500">Projects</span>
       </h2>

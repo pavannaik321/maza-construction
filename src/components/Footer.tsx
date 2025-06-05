@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo + Socials */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <img src="/logo.png" alt="Logo" className="w-20 h-20 mb-4 rounded-full" />
+          <img src="/download.jpeg" alt="Logo" className="w-20 h-20 mb-4 rounded-full" />
           <p className="text-xs mb-4">YourCompany<br />Great Slogan Here</p>
           <div className="flex gap-3">
             <div className="bg-gray-100 p-2 rounded-md">
@@ -26,10 +26,10 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-gray-600">
             
-        <li><a href="#" className="hover:text-white transition">About Us</a></li>
-        <li><a href="#" className="hover:text-white transition">services</a></li>
-        <li><a href="#" className="hover:text-white transition">projects</a></li>
-        <li><a href="#" className="hover:text-white transition">contact</a></li>
+        <li><a href="/about" className="hover:text-white transition">About Us</a></li>
+        <li><a href="#" className="hover:text-white transition">Services</a></li>
+        <li><a href="#" className="hover:text-white transition">Projects</a></li>
+        <li><a href="#" className="hover:text-white transition">Contact</a></li>
       </ul>
         </div>
 

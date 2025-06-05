@@ -5,12 +5,12 @@ export default function About() {
         
         {/* Left Column */}
         <div>
-          <div className="inline-block bg-gray-100 text-xs px-4 py-1 rounded-full text-gray-600 mb-3">
+          <div className="inline-block bg-gray-100 text-s px-4 py-1 rounded-md text-gray-600 mb-3">
             About Us
           </div>
           <h2 className="text-3xl font-bold text-black mb-4">What We Stand For</h2>
           <p className="text-gray-500 text-sm mb-6 leading-relaxed">
-            Malasa Construction is a renowned name in the field of civil works, building renovation,
+            maza Construction is a renowned name in the field of civil works, building renovation,
             construction, interior design, painting, plumbing, and waterproofing services. With a
             commitment to quality and customer satisfaction, we offer comprehensive solutions tailored
             to meet the diverse needs.
@@ -23,7 +23,7 @@ export default function About() {
             />
             <div>
               <p className="text-black font-semibold text-sm">Mandar</p>
-              <p className="text-gray-500 text-xs">Founder Malasa Construction</p>
+              <p className="text-gray-500 text-xs">Founder maza Construction</p>
             </div>
           </div>
         </div>
@@ -41,15 +41,15 @@ export default function About() {
         <div>
           <div className="flex justify-center mb-6">
             <img
-              src="/logo.png"
+              src="/download.jpeg"
               alt="Company Logo"
-              className="w-20 h-20 object-contain"
+              className="w-20 h-20 rounded-full object-cover"
             />
           </div>
           <div className="mb-6">
             <h4 className="text-lg font-semibold text-black">Our Mission</h4>
             <p className="text-gray-600 text-sm mt-2">
-              Malasa Construction is a renowned name in the field of civil works, building renovation,
+              maza Construction is a renowned name in the field of civil works, building renovation,
               construction, interior design, painting.
             </p>
           </div>
@@ -57,14 +57,14 @@ export default function About() {
           <div>
             <h4 className="text-lg font-semibold text-black">Our Vision</h4>
             <p className="text-gray-600 text-sm mt-2">
-              Malasa Construction is a renowned name in the field of civil works, building renovation,
+              maza Construction is a renowned name in the field of civil works, building renovation,
               construction, interior design, painting.
             </p>
           </div>
         </div>
         
       </div>
-      <hr className="my-4" />
+      <hr className="my-4 mb-9" />
     </section>
   );
 }
