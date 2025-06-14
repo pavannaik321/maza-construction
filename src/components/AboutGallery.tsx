@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function AboutGallery() {
   return (
     <section className="bg-white py-16 px-6 bg-contain bg-center bg-no-repeat "
@@ -11,7 +12,7 @@ export default function AboutGallery() {
               key={index}
               className="overflow-hidden rounded-xl shadow transform transition-transform duration-500 hover:scale-105"
             >
-              <img src={src} alt={`Gallery ${index}`} className="w-full h-64 object-cover" />
+              <Image src={src} alt={`Gallery ${index}`} className="w-full h-64 object-cover" />
             </div>
           ))}
         </div>

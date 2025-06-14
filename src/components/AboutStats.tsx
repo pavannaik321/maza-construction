@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function AboutStats() {
   const stats = [
@@ -37,12 +38,12 @@ export default function AboutStats() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-y-1 gap-x-1">
         {/* Left Column */}
         <div className="flex flex-col gap-1">
-          <img
+          <Image
             src="/image5.jpg"
             alt="Image 1"
             className="rounded-xl w-42 h-38 object-cover shadow-md"
           />
-          <img
+          <Image
             src="/image2.jpg"
             alt="Image 2"
             className="rounded-xl w-42 h-38 object-cover shadow-md"
@@ -51,12 +52,12 @@ export default function AboutStats() {
 
         {/* Right Column */}
         <div className="flex flex-col gap-1">
-          <img
+          <Image
             src="/image3.jpg"
             alt="Image 3"
             className="rounded-xl w-42 h-38 object-cover shadow-md"
           />
-          <img
+          <Image
             src="/image4.jpg"
             alt="Image 4"
             className="rounded-xl w-36 h-34 object-cover shadow-md"

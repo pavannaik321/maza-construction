@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
@@ -41,10 +42,10 @@ export default function ClientTestimonials() {
           <FaQuoteLeft className="text-4xl text-yellow-400 absolute left-6 top-6" />
           <FaQuoteRight className="text-4xl text-yellow-400 absolute right-6 bottom-6" />
 
-          <p className="text-lg italic text-gray-700 mb-6">"{feedback}"</p>
+          <p className="text-lg italic text-gray-700 mb-6">{feedback}</p>
 
           <div className="flex items-center justify-center gap-4">
-            <img src={image} alt={name} className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400" />
+            <Image src={image} alt={name} className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400" />
             <div>
               <h4 className="text-md font-semibold text-gray-900">{name}</h4>
               <p className="text-sm text-gray-600">{role}</p>
