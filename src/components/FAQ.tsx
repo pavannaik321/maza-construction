@@ -17,7 +17,7 @@ export default function FAQ() {
   style={{ backgroundImage: "url('/bgimage2.png')",
     backgroundSize: "1500px 500px",
    }}>
-      <h2 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center p-4">Frequently Asked Questions</h2>
       <div className="space-y-4 max-w-2xl mx-auto">
         {questions.map((q, idx) => (
           <div key={idx} className="border border-gray-600 rounded overflow-hidden">
