@@ -38,29 +38,29 @@ export default function AboutStats() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-y-1 gap-x-1">
         {/* Left Column */}
         <div className="flex flex-col gap-1">
-          <Image
+          <img
             src="/image5.jpg"
             alt="Image 1"
-            className="rounded-xl w-42 h-38 object-cover shadow-md"
+            className="rounded-xl w-40 h-38 object-cover shadow-md"
           />
-          <Image
+          <img
             src="/image2.jpg"
             alt="Image 2"
-            className="rounded-xl w-42 h-38 object-cover shadow-md"
+            className="rounded-xl w-40 h-38 object-cover shadow-md"
           />
         </div>
 
         {/* Right Column */}
         <div className="flex flex-col gap-1">
-          <Image
+          <img
             src="/image3.jpg"
             alt="Image 3"
-            className="rounded-xl w-42 h-38 object-cover shadow-md"
+            className="rounded-xl w-40 h-38 object-cover shadow-md"
           />
-          <Image
+          <img
             src="/image4.jpg"
             alt="Image 4"
-            className="rounded-xl w-36 h-34 object-cover shadow-md"
+            className="rounded-xl w-40 h-38 object-cover shadow-md"
             
           />
         </div>
