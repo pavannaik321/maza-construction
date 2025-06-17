@@ -19,7 +19,7 @@ export default function ContactHero() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Let's <span className="text-yellow-400">Build</span> Together
+          Lets <span className="text-yellow-400">Build</span> Together
         </motion.h2>
 
         <motion.p
@@ -29,7 +29,7 @@ export default function ContactHero() {
           transition={{ duration: 0.4, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          Got a project in mind? Reach out to Maza Construction — we’re here to turn your ideas into reality.
+          Got a project in mind? Reach out to Maza Construction — we are here to turn your ideas into reality.
         </motion.p>
 
         <motion.a

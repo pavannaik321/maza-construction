@@ -18,9 +18,9 @@ export default function ContactForm() {
           <div className="relative bg-black rounded-4xl z-10  text-center px-10">
 
           <h2 className="text-3xl font-bold text-white mb-6 text-center">
-            Let's<span className="text-yellow-400"> Connect </span>
+            Let us<span className="text-yellow-400"> Connect </span>
             </h2>
-            <p className="text-lg text-gray-200">We're ready to build with you. Let's turn your vision into reality.</p>
+            <p className="text-lg text-gray-200">We are ready to build with you. Let us turn your vision into reality.</p>
           </div>
         </motion.div>
 
