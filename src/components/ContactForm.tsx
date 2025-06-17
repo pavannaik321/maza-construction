@@ -24,7 +24,7 @@ export default function ContactForm() {
           </div>
         </motion.div>
 
-        {/* Right Form Section */}
+        
         <motion.div
           className="p-10 lg:p-14 bg-white/80 backdrop-blur-lg"
           initial={{ opacity: 0, y: 30 }}
