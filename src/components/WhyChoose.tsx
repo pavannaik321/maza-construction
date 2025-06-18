@@ -1,32 +1,35 @@
 const features = [
   {
     title: "Commitment to Excellence",
-    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
+    desc: "We offer a comprehensive range of construction services designed to meet your needs.",
   },
   {
     title: "Comprehensive Communication",
-    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
+    desc: "We offer a comprehensive range of construction services designed to meet your needs.",
   },
   {
     title: "Collaborative Approach",
-    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
+    desc: "We offer a comprehensive range of construction services designed to meet your needs.",
   },
   {
     title: "Customer Success",
-    desc: "We offer a comprehensive range of construction services designed to meet hour needs.",
+    desc: "We offer a comprehensive range of construction services designed to meet your needs.",
   },
 ];
 
 export default function WhyChoose() {
   return (
     <section
-  className="relative text-white py-20 px-4 bg-white bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/bgimage1.png')",
-    backgroundSize: "1500px 600px",
-   }}
->  <div
-        className=" max-w-7xl mx-auto px-4 pt-14 pb-20"
-      
+      className="relative text-white py-20 px-4 bg-white bg-cover bg-center bg-no-repeat sm:bg-[url('/bgimage1.png')]"
+      style={{
+        backgroundSize: '1500px 600px',
+      }}
+    >
+      <div
+        className="
+          max-w-7xl mx-auto px-4 pt-14 pb-20
+          bg-black sm:bg-transparent rounded-3xl sm:rounded-none shadow-md sm:shadow-none
+        "
       >
         {/* Heading */}
         <div className="text-center mb-10">

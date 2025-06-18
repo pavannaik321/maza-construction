@@ -2,6 +2,7 @@
 
 import { FaTools, FaShieldAlt, FaLightbulb, FaUsers, FaClock, FaCogs } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const values = [
   { icon: <FaTools />, title: 'Craftsmanship', desc: 'Every cut, weld, and polish reflects our dedication to mastery.' },
@@ -13,36 +14,69 @@ const values = [
 ];
 
 export default function CoreValues() {
-  return (
-    <section className=" bg-white py-24 px-6 overflow-hidden">
-      {/* Decorative Blurs */}
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  return (
+    <section className="bg-white py-24 px-6 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 text-gray-800 animate-fade-in-up ">🏗️ Built on Unshakable Values</h2>
-        <p className="text-lg text-gray-600 mb-14 max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-gray-800">🏗️ Built on Unshakable Values</h2>
+        <p className="text-sm sm:text-lg text-gray-600 mb-14 max-w-2xl mx-auto">
           At our core lies a deep commitment to principles that elevate every project — and every person.
         </p>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-          {values.map((val, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2"
-            >
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 text-yellow-500 text-3xl mb-4 shadow-md">
-                {val.icon}
+        <div
+          className={`${
+            isMobile
+              ? 'flex overflow-x-auto no-scrollbar gap-6 px-1 -mx-1'
+              : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4'
+          }`}
+        >
+          {values.map((val, index) => {
+            const card = (
+              <div
+                key={index}
+                className="min-w-[250px] sm:min-w-0 bg-white/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all sm:hover:-translate-y-2 flex-shrink-0"
+              >
+                <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-yellow-100 text-yellow-500 text-2xl sm:text-3xl mb-4 shadow-md">
+                  {val.icon}
+                </div>
+                <h3 className="text-base sm:text-xl font-semibold text-gray-800 mb-2">{val.title}</h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{val.desc}</p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{val.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{val.desc}</p>
-            </motion.div>
-          ))}
+            );
+
+            return isMobile ? card : (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                {card}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
+
+      {/* Inline CSS for no-scrollbar */}
+      <style jsx>{`
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 }

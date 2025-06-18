@@ -36,26 +36,38 @@ export default function ClientTestimonials() {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">What Our Clients Say</h2>
+        {/* Title */}
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-10">
+          What Our Clients Say
+        </h2>
 
+        {/* Testimonial Card */}
         <div className="bg-white p-8 rounded-xl shadow-lg relative">
-          <FaQuoteLeft className="text-4xl text-yellow-400 absolute left-6 top-6" />
-          <FaQuoteRight className="text-4xl text-yellow-400 absolute right-6 bottom-6" />
+          {/* Quote Icons - hidden on small screens */}
+          <FaQuoteLeft className="text-4xl text-yellow-400 absolute left-6 top-6 hidden sm:block" />
+          <FaQuoteRight className="text-4xl text-yellow-400 absolute right-6 bottom-6 hidden sm:block" />
 
-          <p className="text-lg italic text-gray-700 mb-6">{feedback}</p>
+          {/* Feedback Text */}
+          <p className="text-base sm:text-lg italic text-gray-700 mb-6">{feedback}</p>
 
+          {/* Client Info */}
           <div className="flex items-center justify-center gap-4">
             <img src={image} alt={name} className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400" />
             <div>
-              <h4 className="text-md font-semibold text-gray-900">{name}</h4>
-              <p className="text-sm text-gray-600">{role}</p>
+              <h4 className="text-sm sm:text-md font-semibold text-gray-900">{name}</h4>
+              <p className="text-xs sm:text-sm text-gray-600">{role}</p>
             </div>
           </div>
         </div>
 
+        {/* Navigation Buttons */}
         <div className="mt-8 flex justify-center gap-4">
-          <button onClick={prev} className="px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-black rounded-lg">Prev</button>
-          <button onClick={next} className="px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-black rounded-lg">Next</button>
+          <button onClick={prev} className="px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-black rounded-lg">
+            Prev
+          </button>
+          <button onClick={next} className="px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-black rounded-lg">
+            Next
+          </button>
         </div>
       </div>
     </section>

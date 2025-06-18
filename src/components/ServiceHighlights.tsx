@@ -44,24 +44,45 @@ export default function ServiceHighlights() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-6 font-lexend">
-      <div className="text-center max-w-4xl mx-auto mb-12">
-        <h2 className="text-4xl font-bold text-yellow-400 mb-4">Our Core Services</h2>
-        <p className="text-gray-600">Smart solutions for modern construction—from concept to completion.</p>
+    <section className="bg-gray-100 py-12 md:py-16 px-4 md:px-6 font-lexend">
+      {/* Title Section */}
+      <div className="text-center max-w-4xl mx-auto mb-10 md:mb-12">
+        <h2 className="text-2xl md:text-4xl font-bold text-yellow-400 mb-3 md:mb-4">
+          Our Core Services
+        </h2>
+        <p className="text-sm md:text-base text-gray-600">
+          Smart solutions for modern construction—from concept to completion.
+        </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3 sm:grid-cols-2 max-w-6xl mx-auto">
+      {/* Mobile: Horizontal Scroll | Desktop: Grid */}
+      <div className="flex md:grid md:grid-cols-3 sm:grid-cols-2 gap-4 md:gap-8 max-w-6xl mx-auto overflow-x-auto no-scrollbar px-1 md:px-0">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300"
+            className="min-w-[250px] md:min-w-0 bg-white rounded-2xl shadow-md p-4 md:p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 flex-shrink-0"
           >
-            <div className="text-4xl text-yellow-400 bg-yellow-100 p-4 rounded-full mb-4 shadow">{service.icon}</div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">{service.title}</h3>
-            <p className="text-gray-600 text-sm">{service.desc}</p>
+            <div className="text-2xl md:text-4xl text-yellow-400 bg-yellow-100 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow">
+              {service.icon}
+            </div>
+            <h3 className="text-sm md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">
+              {service.title}
+            </h3>
+            <p className="text-xs md:text-sm text-gray-600">{service.desc}</p>
           </div>
         ))}
       </div>
+
+      {/* CSS to Hide Scrollbar */}
+      <style jsx>{`
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 }

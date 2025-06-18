@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 
-
 export default function AboutStats() {
   const stats = [
     { target: 600, suffix: '+', label: 'Manpower With Key Expertise' },
@@ -32,57 +31,61 @@ export default function AboutStats() {
   }, []);
 
   return (
-    <section className="bg-white py-18 px-6">
+    <section className="bg-white py-14 sm:py-18 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Side - 2x2 Image Grid */}
-        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-y-1 gap-x-1">
-        {/* Left Column */}
-        <div className="flex flex-col gap-1">
-          <img
-            src="/image5.jpg"
-            alt="Image 1"
-            className="rounded-xl w-40 h-38 object-cover shadow-md"
-          />
-          <img
-            src="/image2.jpg"
-            alt="Image 2"
-            className="rounded-xl w-40 h-38 object-cover shadow-md"
-          />
+        {/* Left Side - Image Grid */}
+        <div className="flex justify-center sm:justify-start">
+          <div className="flex gap-1">
+            {/* Left Column */}
+            <div className="flex flex-col gap-1">
+              <img
+                src="/image5.jpg"
+                alt="Image 1"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+              />
+              <img
+                src="/image2.jpg"
+                alt="Image 2"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+              />
+            </div>
+
+            {/* Right Column */}
+            <div className="flex flex-col gap-1">
+              <img
+                src="/image3.jpg"
+                alt="Image 3"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+              />
+              <img
+                src="/image4.jpg"
+                alt="Image 4"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col gap-1">
-          <img
-            src="/image3.jpg"
-            alt="Image 3"
-            className="rounded-xl w-40 h-38 object-cover shadow-md"
-          />
-          <img
-            src="/image4.jpg"
-            alt="Image 4"
-            className="rounded-xl w-40 h-38 object-cover shadow-md"
-            
-          />
-        </div>
-      </div>
-
-
-        {/* Right Side - Heading + Paragraph + Stats */}
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Take A Glimpse Into Our Construction Voyage</h2>
-          <p className="text-gray-600 mb-6">
-            A Trailblazer in the Construction Industry. Our journey spans 25+ states, 200+ cities, and countless successful structures.
+        {/* Right Side - Text + Stats */}
+        <div className="text-center sm:text-left">
+          <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4">
+            Take A Glimpse Into Our Construction Voyage
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-base mb-6">
+            A Trailblazer in the Construction Industry. Our journey spans 25+ states,
+            200+ cities, and countless successful structures.
           </p>
 
-          {/* Stats Section */}
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 justify-center sm:justify-start">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <h3 className="text-4xl font-extrabold text-yellow-500 mb-1">
+                <h3 className="text-2xl sm:text-4xl font-extrabold text-yellow-500 mb-1">
                   {counts[index]}
                   {stat.suffix}
                 </h3>
-                <p className="text-gray-700 text-sm font-medium">{stat.label}</p>
+                <p className="text-xs sm:text-sm text-gray-700 font-medium">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>
@@ -90,4 +93,4 @@ export default function AboutStats() {
       </div>
     </section>
   );
-} 
+}
