@@ -1,20 +1,18 @@
-
-'use client'
+// app/contact/page.tsx
 import Header from '@/components/Header';
-import ContactForm from '@/components/contactus'
+import ContactHero from '@/components/ContactHero';
+import ContactOptions from '@/components/ContactOption';
+import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 
-export default function ContactPage() {
+export default function contact() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-yellow-100 py-16 px-6">
-      <h1 className="text-4xl font-bold text-center mb-12 text-primary drop-shadow-md">
-        Contact Maza Construction
-      </h1>
-      <div className="max-w-6xl mx-auto">
-        <Header />
-        <ContactForm />
-        <Footer />
-      </div>
-    </main>
-  )
+    <>
+      <Header />
+      <ContactHero />
+      <ContactOptions />
+      <ContactForm />
+      <Footer />
+    </>
+  );
 }
