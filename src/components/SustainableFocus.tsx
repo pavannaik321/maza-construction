@@ -1,4 +1,5 @@
 'use client';
+
 const sustainabilityPoints = [
   {
     icon: "🌿",
@@ -29,12 +30,12 @@ export default function SustainableFocus() {
         Building for a Greener Future
       </h2>
 
-      {/* Mobile: horizontal scroll | Desktop: grid layout */}
-      <div className="md:grid md:grid-cols-4 gap-8 flex overflow-x-auto no-scrollbar space-x-4 md:space-x-0">
+      {/* Mobile: vertical stack | Desktop: grid layout */}
+      <div className="flex flex-col gap-4 md:grid md:grid-cols-4 md:gap-8">
         {sustainabilityPoints.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white p-4 md:p-6 rounded-xl shadow hover:shadow-md transition text-center min-w-[240px] md:min-w-0 flex-shrink-0"
+            className="bg-white p-4 md:p-6 rounded-xl shadow hover:shadow-md transition text-center"
           >
             <div className="text-4xl md:text-5xl mb-3 md:mb-4">{item.icon}</div>
             <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2 text-green-700">
@@ -44,17 +45,6 @@ export default function SustainableFocus() {
           </div>
         ))}
       </div>
-
-      {/* Scoped scrollbar hiding */}
-      <style jsx>{`
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </section>
   );
 }
