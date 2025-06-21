@@ -34,7 +34,7 @@ export default function CoreValues() {
         <div
           className={`${
             isMobile
-              ? 'flex overflow-x-auto no-scrollbar gap-6 px-1 -mx-1'
+              ? 'flex flex-col gap-6 items-center'
               : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4'
           }`}
         >
@@ -42,7 +42,7 @@ export default function CoreValues() {
             const card = (
               <div
                 key={index}
-                className="min-w-[250px] sm:min-w-0 bg-white/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all sm:hover:-translate-y-2 flex-shrink-0"
+                className="w-full max-w-xs bg-white/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all sm:hover:-translate-y-2"
               >
                 <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-yellow-100 text-yellow-500 text-2xl sm:text-3xl mb-4 shadow-md">
                   {val.icon}
@@ -66,17 +66,6 @@ export default function CoreValues() {
           })}
         </div>
       </div>
-
-      {/* Inline CSS for no-scrollbar */}
-      <style jsx>{`
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </section>
   );
 }

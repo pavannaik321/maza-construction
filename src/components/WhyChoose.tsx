@@ -20,7 +20,7 @@ const features = [
 export default function WhyChoose() {
   return (
     <section
-      className="relative text-white py-20 px-4 bg-white bg-cover bg-center bg-no-repeat sm:bg-[url('/bgimage1.png')]"
+      className="relative text-white py-20 px-4 lg:px-20 bg-white bg-cover bg-center bg-no-repeat sm:bg-[url('/bgimage1.png')]"
       style={{
         backgroundSize: '1500px 600px',
       }}
@@ -36,7 +36,7 @@ export default function WhyChoose() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 p-6">
             Why choose <span className="text-yellow-400">maza Construction</span>?
           </h2>
-          <p className="text-gray-400 max-w-3xl mx-auto">
+          <p className="text-gray-400 max-w-3xl mx-auto p-4">
             maza Construction is a renowned name in the field of civil works,
             building renovation, construction, interior design, painting.
           </p>

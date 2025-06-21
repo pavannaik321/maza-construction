@@ -41,8 +41,8 @@ export default function Projects() {
               alt={`Project ${i + 1}`}
               className="w-full h-48 object-cover transform transition-transform duration-500"
             />
-            {/* Overlay Text Box */}
-            <div className="absolute bottom-3 left-3 bg-white rounded-lg px-3 py-2 shadow-md">
+            {/* Centered Transparent Box - Mobile */}
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-md text-center w-max">
               <h5 className="font-semibold text-xs text-black mb-1">Title {i + 1}</h5>
               <p className="text-[10px] text-gray-600">
                 We offer a comprehensive range of construction
@@ -64,8 +64,8 @@ export default function Projects() {
               alt={`Project ${i + 1}`}
               className="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110"
             />
-            {/* Overlay Text Box */}
-            <div className="absolute bottom-4 left-4 bg-white rounded-lg px-4 py-3 shadow-md opacity-0 group-hover:opacity-100 transition duration-300">
+            {/* ✅ Centered Transparent Box - Desktop */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-3 shadow-md opacity-0 group-hover:opacity-100 transition duration-300 text-center w-max">
               <h5 className="font-semibold text-sm text-black mb-1">Title {i + 1}</h5>
               <p className="text-xs text-gray-600">
                 We offer a comprehensive range of construction

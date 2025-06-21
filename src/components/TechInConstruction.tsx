@@ -36,14 +36,13 @@ export default function TechInConstruction() {
         Technology in Construction
       </h2>
 
-      {/* Mobile: horizontal scroll | Desktop: grid */}
-      <div className="md:grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto flex overflow-x-auto no-scrollbar space-x-4 md:space-x-0 px-1 md:px-0">
+      <div className="flex flex-col md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto no-scrollbar px-1 md:px-0">
         {techTools.map((tool, idx) => (
           <div
             key={idx}
             className={`relative rounded-xl overflow-hidden shadow-xl transform transition-all duration-700 ${
               show ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            } min-w-[270px] md:min-w-0 flex-shrink-0`}
+            } w-full`}
             style={{ transitionDelay: `${idx * 150}ms` }}
           >
             {/* Background image */}
@@ -53,19 +52,12 @@ export default function TechInConstruction() {
               className="w-full h-48 md:h-64 object-cover"
             />
 
-            {/* Gradient overlay (optional) */}
-            <div className="absolute inset-0 bg-opacity-50" />
-
-            {/* Floating icon + title */}
-            <div className="absolute -top-1 left-3 bg-white rounded-full px-2 py-2 shadow-lg flex items-center gap-2">
-              <div className="text-xl md:text-2xl">{tool.icon}</div>
-              <h3 className="text-sm md:text-base font-semibold text-gray-700">
+            {/* Merged title + description box */}
+            <div className="absolute bottom-4 left-4 right-4 bg-white bg-opacity-90 text-gray-700 rounded-lg px-3 md:px-4 py-3 shadow-md z-10">
+              <h3 className="text-sm md:text-base font-semibold mb-1 flex items-center gap-2">
+                <span className="text-lg md:text-xl">{tool.icon}</span>
                 {tool.title}
               </h3>
-            </div>
-
-            {/* Description box */}
-            <div className="absolute bottom-4 left-4 right-4 bg-white bg-opacity-90 text-gray-700 rounded-lg px-3 md:px-4 py-2 md:py-3 shadow-md z-10">
               <p className="text-xs md:text-sm">{tool.desc}</p>
             </div>
           </div>
