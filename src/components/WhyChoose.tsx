@@ -22,7 +22,7 @@ export default function WhyChoose() {
     <section
       className="relative text-white py-20 px-4 lg:px-8 lg:py-8 bg-white bg-cover bg-center bg-no-repeat sm:bg-[url('/bgimage1.png')]"
       style={{
-        backgroundSize: '1500px 600px',
+        backgroundSize: '1400px 600px',
       }}
     >
       <div
@@ -32,7 +32,7 @@ export default function WhyChoose() {
         "
       >
         {/* Heading */}
-        <div className="text-center mb-10 lg:pt-1">
+        <div className="text-center mb-10 lg:pt-1 py-6 px-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 p-6">
             Why choose <span className="text-yellow-400">maza Construction</span>?
           </h2>
