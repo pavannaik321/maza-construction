@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000; /* Black text */
 }
 
 @theme inline {
@@ -12,17 +12,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Disable dark mode override */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;   /* Keep background white */
+    --foreground: #000000;   /* Keep text black */
   }
 }
 
+/* Apply background and text color */
 body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Scrollbar hide utility */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

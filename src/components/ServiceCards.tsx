@@ -6,22 +6,24 @@ export default function ServiceCards() {
     { title: 'Interior Designing', image: '/image2.jpg' },
     { title: 'Commercial Projects', image: '/image3.jpg' },
     { title: 'Turnkey Projects', image: '/image4.jpg' },
+    { title: 'House Renovation', image: '/image3.jpg' },
+    { title: 'Furniture Work', image: '/image2.jpg' },
   ];
 
   return (
-    <section className="py-12 md:py-16 px-4 md:px-6 bg-white font-lexend">
+    <section className="py-12  md:py-16 px-2 md:px-4 bg-white font-lexend">
       {/* Title Section */}
       <div className="max-w-7xl mx-auto text-center mb-8 md:mb-10">
         <h2 className="text-2xl md:text-4xl font-bold text-yellow-400 mb-2 p-2 md:p-4">
-          Our Services
+          Featured Services
         </h2>
         <p className="text-xs md:text-sm text-gray-600">
-          We deliver innovative and customized solutions for every construction need.
+          Our most requested services for construction and interior excellence.
         </p>
       </div>
 
       {/* Mobile: Horizontal Slide | Desktop: Grid */}
-      <div className="flex sm:grid sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-7xl mx-auto overflow-x-auto no-scrollbar px-1 sm:px-0">
+      <div className="flex sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 max-w-7xl mx-auto overflow-x-auto no-scrollbar px-1 sm:px-0">
         {services.map((service, index) => (
           <div
             key={index}

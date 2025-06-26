@@ -66,7 +66,9 @@ export default function Projects() {
             />
             {/* ✅ Centered Transparent Box - Desktop */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-3 shadow-md opacity-0 group-hover:opacity-100 transition duration-300 text-center w-max">
-              <h5 className="font-semibold text-sm text-black mb-1">Title {i + 1}</h5>
+              <h5 className="font-semibold text-sm text-black mb-1 sm:px-3 sm:py-1">
+                Title {i + 1}
+              </h5>
               <p className="text-xs text-gray-600">
                 We offer a comprehensive range of construction
               </p>

@@ -15,11 +15,12 @@ export default function FAQ() {
   return (
     <section
       className={`
-        py-20 px-4 text-white bg-cover bg-center bg-no-repeat 
+        p-6 text-white bg-cover bg-center bg-no-repeat 
         sm:bg-[url('/bgimage2.png')] sm:bg-white
+        sm:px-20 sm:py-24
       `}
       style={{
-        backgroundSize: '1500px 500px',
+        backgroundSize: '1400px 500px',
       }}
     >
       <div className="max-w-3xl mx-auto bg-black sm:bg-transparent rounded-3xl sm:rounded-none border-4 border-white sm:border-0 p-6 sm:p-0">
