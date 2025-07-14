@@ -26,21 +26,22 @@ export default function WhyChoose() {
       }}
     >
       <div
-        className="
-          max-w-7xl mx-auto px-4 pt-14 pb-20
-          bg-black sm:bg-transparent rounded-3xl sm:rounded-none shadow-md sm:shadow-none
-        "
-      >
-        {/* Heading */}
-        <div className="text-center mb-10 lg:pt-1 py-6 px-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 p-6">
-            Why choose <span className="text-yellow-400">maza Construction</span>?
-          </h2>
-          <p className="text-gray-400 max-w-3xl mx-auto p-4">
-            maza Construction is a renowned name in the field of civil works,
-            building renovation, construction, interior design, painting.
-          </p>
-        </div>
+  className="
+    max-w-7xl mx-auto px-4 pt-14 pb-20
+    bg-black sm:bg-transparent rounded-3xl sm:rounded-none shadow-md sm:shadow-none
+  "
+>
+  {/* Heading */}
+  <div className="text-center mb-10 lg:pt-1 px-4 sm:px-10 md:px-20 py-4 sm:py-6">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 p-2 sm:p-4 md:p-6">
+      Why choose <span className="text-yellow-400">maza Construction</span>?
+    </h2>
+    <p className="text-gray-400 max-w-3xl mx-auto px-2 sm:px-4 md:px-6">
+      maza Construction is a renowned name in the field of civil works,
+      building renovation, construction, interior design, painting.
+    </p>
+  </div>
+
 
         {/* Feature Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
