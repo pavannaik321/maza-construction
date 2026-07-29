@@ -3,22 +3,22 @@ import { useEffect, useState } from "react";
 
 const techTools = [
   {
-    icon: "🛠️",
-    title: "Smart Tools & Drones",
-    desc: "Monitoring construction using aerial drone surveillance and sensor tech.",
-    image: "/image4.jpg",
+    icon: "⚙️",
+    title: "Motorized Aggregate & Sand Screening",
+    desc: "Powered sand sifting machinery ensuring clean fine aggregate for high-strength plastering.",
+    image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.24.jpeg",
   },
   {
     icon: "🏗️",
-    title: "Automated Machinery",
-    desc: "Robotic and CNC-driven equipment ensures speed and safety on site.",
-    image: "/image2.jpg",
+    title: "On-Site Hoisting & Concrete Batching",
+    desc: "Mechanical mini-crane hoist system for fast, safe material transport to upper floors.",
+    image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.20 (1).jpeg",
   },
   {
-    icon: "📐",
-    title: "3D Modeling & BIM",
-    desc: "We use advanced BIM to plan every inch before a brick is laid.",
-    image: "/image3.jpg",
+    icon: "📏",
+    title: "Straight-Edge Screeding & Plumb Control",
+    desc: "Precision screeding tools and level gauge checks to guarantee flawless wall verticality.",
+    image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.27 (1).jpeg",
   },
 ];
 

@@ -2,12 +2,36 @@
 
 export default function ServiceCards() {
   const services = [
-    { title: 'Civil Construction', image: '/image5.jpg' },
-    { title: 'Interior Designing', image: '/image2.jpg' },
-    { title: 'Commercial Projects', image: '/image3.jpg' },
-    { title: 'Turnkey Projects', image: '/image4.jpg' },
-    { title: 'House Renovation', image: '/image3.jpg' },
-    { title: 'Furniture Work', image: '/image2.jpg' },
+    {
+      title: 'Civil Construction',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg',
+      desc: 'RCC structural frame casting, columns, beams, and foundation work.',
+    },
+    {
+      title: 'Masonry & Wall Work',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.30.jpeg',
+      desc: 'Laterite stone & red brick wall construction with high-strength mortar.',
+    },
+    {
+      title: 'Precision Plastering',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.28.jpeg',
+      desc: 'Smooth internal and external wall cement plastering and screeding.',
+    },
+    {
+      title: 'Kitchen & Counter Slabs',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.31 (1).jpeg',
+      desc: 'Granite and concrete kitchen platforms with integrated sink fittings.',
+    },
+    {
+      title: 'House Renovation',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.26 (1).jpeg',
+      desc: 'Complete wall revamping, window enlargement, and structural modification.',
+    },
+    {
+      title: 'Site Prep & Materials',
+      image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.24.jpeg',
+      desc: 'Motorized sand screening, gravel delivery, and raw material batching.',
+    },
   ];
 
   return (
@@ -37,8 +61,13 @@ export default function ServiceCards() {
             />
 
             {/* Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-black/80 text-yellow-400 text-center py-2 md:py-3 text-sm md:text-lg font-semibold">
-              {service.title}
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/75 to-transparent text-white p-3 md:p-4 text-center transition-all duration-300">
+              <h3 className="text-yellow-400 text-sm md:text-lg font-bold mb-1">
+                {service.title}
+              </h3>
+              <p className="text-[11px] md:text-xs text-gray-300 opacity-90 line-clamp-2">
+                {service.desc}
+              </p>
             </div>
           </div>
         ))}

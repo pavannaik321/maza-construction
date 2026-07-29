@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "/image5.jpg",
-  "/image2.jpg",
-  "/image3.jpg",
-  "/image4.jpg",
+  "/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg",
+  "/workimages/WhatsApp Image 2026-07-27 at 21.54.26 (1).jpeg",
+  "/workimages/WhatsApp Image 2026-07-27 at 21.54.28.jpeg",
+  "/workimages/WhatsApp Image 2026-07-27 at 21.54.30.jpeg",
+  "/workimages/WhatsApp Image 2026-07-27 at 21.54.31 (1).jpeg",
 ];
 
 export default function HeroAbout() {

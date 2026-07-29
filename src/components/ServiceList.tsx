@@ -3,16 +3,36 @@
 import React from "react";
 
 export default function ServicesList() {
-  const images = [
-    "/download.jpeg",
-    "/image2.jpg",
-    "/image3.jpg",
-    "/image4.jpg",
-    "/image5.jpg",
+  const serviceItems = [
+    {
+      title: "Civil Construction",
+      image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg",
+      desc: "Full structural RCC work",
+    },
+    {
+      title: "Stone & Brick Masonry",
+      image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.30.jpeg",
+      desc: "Laterite & brick walling",
+    },
+    {
+      title: "Precision Plastering",
+      image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.28.jpeg",
+      desc: "Internal & external screed",
+    },
+    {
+      title: "Kitchen & Counter Fitting",
+      image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.31 (1).jpeg",
+      desc: "Granite platforms & sink",
+    },
+    {
+      title: "Site Prep & Material Processing",
+      image: "/workimages/WhatsApp Image 2026-07-27 at 21.54.24.jpeg",
+      desc: "Sand screening & aggregates",
+    },
   ];
 
   return (
-    <section className="py-16 bg-white text-center p-0">
+    <section className="py-16 bg-white text-center font-lexend">
       {/* Inject custom CSS to hide scrollbar */}
       <style>{`
         .hide-scrollbar::-webkit-scrollbar {
@@ -25,113 +45,69 @@ export default function ServicesList() {
       `}</style>
 
       {/* Heading */}
-      <h3 className="text-xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
-        <span className="text-yellow-500">Our </span>
+      <h3 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 px-4">
+        <span className="text-yellow-500">Our Core </span>
         <span className="text-black">Services</span>
       </h3>
 
       {/* Subheading */}
-      <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto text-gray-500 mb-12 px-4">
-        maza Construction is a renowned name in the field of civil works,
-        building renovation, construction, interior design, painting.
+      <p className="text-xs sm:text-base max-w-2xl mx-auto text-gray-600 mb-12 px-4">
+        Maza Construction delivers turnkey civil solutions, building renovations, masonry, structural RCC work, plastering, plumbing, and site preparation.
       </p>
 
       {/* Mobile View - Horizontal Scroll */}
       <div className="sm:hidden overflow-x-auto flex gap-4 px-4 hide-scrollbar scroll-smooth">
-        {images.map((img, idx) => (
-          <div key={idx} className="flex-shrink-0 w-40 relative">
-            <div className="rounded-xl overflow-hidden shadow-md relative">
+        {serviceItems.map((item, idx) => (
+          <div key={idx} className="flex-shrink-0 w-48 relative">
+            <div className="rounded-xl overflow-hidden shadow-md relative group border border-gray-100">
               <img
-                src={img}
-                alt={`Service ${idx + 1}`}
-                className="w-full h-36 object-cover"
+                src={item.image}
+                alt={item.title}
+                className="w-full h-40 object-cover"
               />
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-black w-28 py-1 rounded text-xs font-medium text-center shadow">
-                New Builds
+              <div className="absolute inset-x-0 bottom-0 bg-black/80 text-white p-2 text-[11px] font-bold text-center">
+                <span className="text-yellow-400 block">{item.title}</span>
+                <span className="text-[9px] text-gray-300 font-normal">{item.desc}</span>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Desktop View - Zigzag Layout */}
-      <div className="hidden sm:flex flex-wrap justify-center gap-6 px-4">
-        {/* Card 1 - UP */}
-        <div className="w-56 mt-0 relative">
-          <div className="rounded-2xl overflow-hidden shadow-md relative">
-            <img
-              src="/download.jpeg"
-              alt="New Builds"
-              className="w-full h-56 object-cover"
-            />
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white text-black w-40 py-1 rounded-md text-sm font-medium text-center shadow">
-              New Builds
+      {/* Desktop View - Staggered Card Grid */}
+      <div className="hidden sm:flex flex-wrap justify-center gap-6 px-4 max-w-7xl mx-auto">
+        {serviceItems.map((item, idx) => (
+          <div
+            key={idx}
+            className={`w-56 relative ${idx % 2 === 1 ? 'mt-8' : 'mt-0'}`}
+          >
+            <div className="rounded-2xl overflow-hidden shadow-lg relative group border border-gray-200 bg-white">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-3 text-center">
+                <h4 className="text-sm font-bold text-yellow-400 mb-0.5">
+                  {item.title}
+                </h4>
+                <p className="text-[11px] text-gray-200">
+                  {item.desc}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Card 2 - DOWN */}
-        <div className="w-56 mt-10 relative">
-          <div className="rounded-2xl overflow-hidden shadow-md relative">
-            <img
-              src="/image2.jpg"
-              alt="New Builds"
-              className="w-full h-56 object-cover"
-            />
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white text-black w-40 py-1 rounded-md text-sm font-medium text-center shadow">
-              New Builds
-            </div>
-          </div>
-        </div>
-
-        {/* Card 3 - UP */}
-        <div className="w-56 mt-0 relative">
-          <div className="rounded-2xl overflow-hidden shadow-md relative">
-            <img
-              src="/image3.jpg"
-              alt="New Builds"
-              className="w-full h-56 object-cover"
-            />
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white text-black w-40 py-1 rounded-md text-sm font-medium text-center shadow">
-              New Builds
-            </div>
-          </div>
-        </div>
-
-        {/* Card 4 - DOWN */}
-        <div className="w-56 mt-10 relative">
-          <div className="rounded-2xl overflow-hidden shadow-md relative">
-            <img
-              src="/image4.jpg"
-              alt="New Builds"
-              className="w-full h-56 object-cover"
-            />
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white text-black w-40 py-1 rounded-md text-sm font-medium text-center shadow">
-              New Builds
-            </div>
-          </div>
-        </div>
-
-        {/* Card 5 - UP */}
-        <div className="w-56 mt-0 relative">
-          <div className="rounded-2xl overflow-hidden shadow-md relative">
-            <img
-              src="/image5.jpg"
-              alt="New Builds"
-              className="w-full h-56 object-cover"
-            />
-            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white text-black w-40 py-1 rounded-md text-sm font-medium text-center shadow">
-              New Builds
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* CTA Button */}
       <div className="mt-12">
-        <button className="bg-yellow-500 text-black text-sm sm:text-base px-6 py-2 rounded-full font-medium shadow-md hover:bg-yellow-600 transition">
-          Get a free quote
-        </button>
+        <a
+          href="/contact"
+          className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black text-xs sm:text-sm px-7 py-3 rounded-full font-bold shadow-md transition duration-300"
+        >
+          Get a Free Site Estimate
+        </a>
       </div>
     </section>
   );

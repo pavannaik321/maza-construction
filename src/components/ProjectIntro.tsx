@@ -8,7 +8,7 @@ export default function ProjectIntro() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/prjt3.jpg")' }}
+        style={{ backgroundImage: 'url("/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg")' }}
       />
 
       {/* Gradient Overlay */}

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function ContactHero() {
   return (
     <section
-      className="relative bg-[url('/contact5.jpg')] bg-cover bg-center bg-no-repeat text-white min-h-[400px] md:min-h-[600px] flex items-center justify-center px-4 md:px-6"
+      className="relative bg-[url('/workimages/WhatsApp%20Image%202026-07-27%20at%2021.54.27.jpeg')] bg-cover bg-center bg-no-repeat text-white min-h-[400px] md:min-h-[600px] flex items-center justify-center px-4 md:px-6"
     >
       {/* Overlay */}
       <div className="absolute inset-0 -z-0 bg-black/50" />

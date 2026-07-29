@@ -42,8 +42,8 @@ export default function HeroService() {
             {/* Top Image */}
             <div className="w-28 h-28 md:w-48 md:h-48 rounded-[20%] overflow-hidden shadow-lg">
               <Image
-                src="/image5.jpg"
-                alt="Top Image"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg"
+                alt="RCC Frame Construction"
                 width={192}
                 height={192}
                 className="object-cover w-full h-full"
@@ -53,8 +53,8 @@ export default function HeroService() {
             {/* Bottom Image */}
             <div className="w-28 h-28 md:w-48 md:h-48 rounded-[20%] overflow-hidden shadow-lg">
               <Image
-                src="/image2.jpg"
-                alt="Bottom Image"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.28.jpeg"
+                alt="Precision Wall Plastering"
                 width={192}
                 height={192}
                 className="object-cover w-full h-full"
@@ -64,8 +64,8 @@ export default function HeroService() {
             {/* Center Overlay Image */}
             <div className="absolute top-1/2 left-[30%] md:left-30 w-28 h-28 md:w-48 md:h-48 -translate-y-1/2 -translate-x-1/3 z-10 rounded-[20%] overflow-hidden border-4 border-white shadow-xl bg-white">
               <Image
-                src="/image3.jpg"
-                alt="Center Overlay"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.30.jpeg"
+                alt="Laterite Stone Masonry"
                 width={192}
                 height={192}
                 className="object-cover w-full h-full"

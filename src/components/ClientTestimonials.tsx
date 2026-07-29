@@ -6,22 +6,22 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const testimonials = [
   {
-    name: 'client name',
-    role: 'CEO, Skyline Ventures',
-    feedback: 'Maza Construction exceeded our expectations. Their attention to detail and timely delivery is unmatched!',
-    image: '/test.jpeg',
+    name: 'Rajesh Naik',
+    role: 'Homeowner, Residential Villa Project',
+    feedback: 'Maza Construction transformed our plot into a sturdy, beautifully finished home. Mandar and his team were hands-on from excavation to roof plastering!',
+    image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.28 (2).jpeg',
   },
   {
-    name: 'client name',
-    role: 'Architect, DesignStudio',
-    feedback: 'Collaborating with them was seamless. They brought our designs to life with perfection.',
-    image: '/test.jpeg',
+    name: 'Suresh Patil',
+    role: 'Property Developer',
+    feedback: 'Their laterite masonry work and concrete slab pouring were completed on schedule. Transparent aggregate sourcing and clean site management!',
+    image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.29 (1).jpeg',
   },
   {
-    name: 'client name',
-    role: 'Site Supervisor, BuildIt Ltd.',
-    feedback: 'Their professionalism and commitment to quality truly set them apart.',
-    image: '/test.jpeg',
+    name: 'Anjali Shenoy',
+    role: 'Home Renovation Client',
+    feedback: 'The kitchen counter slab construction and wall tiling were done with extreme precision. Highly recommend Maza Construction for any civil work!',
+    image: '/workimages/WhatsApp Image 2026-07-27 at 21.54.31 (1).jpeg',
   },
 ];
 

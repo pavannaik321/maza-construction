@@ -35,32 +35,32 @@ export default function AboutStats() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Image Grid */}
         <div className="flex justify-center sm:justify-start">
-          <div className="flex gap-1">
+          <div className="flex gap-2">
             {/* Left Column */}
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <img
-                src="/image5.jpg"
-                alt="Image 1"
-                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.20.jpeg"
+                alt="RCC Frame Construction"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md hover:scale-105 transition-transform"
               />
               <img
-                src="/image2.jpg"
-                alt="Image 2"
-                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.23.jpeg"
+                alt="Precision Masonry Work"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md hover:scale-105 transition-transform"
               />
             </div>
 
             {/* Right Column */}
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <img
-                src="/image3.jpg"
-                alt="Image 3"
-                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.28.jpeg"
+                alt="External Wall Plastering"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md hover:scale-105 transition-transform"
               />
               <img
-                src="/image4.jpg"
-                alt="Image 4"
-                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md"
+                src="/workimages/WhatsApp Image 2026-07-27 at 21.54.30.jpeg"
+                alt="Perimeter Wall Masonry"
+                className="rounded-xl w-28 h-28 sm:w-40 sm:h-38 object-cover shadow-md hover:scale-105 transition-transform"
               />
             </div>
           </div>
