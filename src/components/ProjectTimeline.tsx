@@ -67,7 +67,7 @@ export default function ProjectTimeline() {
               <motion.div
                 key={idx}
                 className={commonClasses}
-                initial={{ opacity: 0, y: idx % 2 === 0 ? -50 : 50 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.2 }}

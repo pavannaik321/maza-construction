@@ -109,7 +109,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-gray-100 text-center py-3 text-gray-600 text-xs">
-        Designed & Developed by Techbite
+        Designed & Developed by <a href="https://nthbuild.com">Nthbuild</a>
       </div>
     </footer>
   );
